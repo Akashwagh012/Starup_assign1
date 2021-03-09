@@ -1,0 +1,144 @@
+***************************************************************************************************************************************************
+AUTHOR:-AKASH ISHWAR WAGH
+PRN:-012
+GROUP NO:-5
+DATE OF CREATION:- 8/3/21
+*************************************************************************************************************************************
+IF
+Q.1 swap two variable without using third variable
+import java.util.Scanner;
+
+public class IfQ1 {
+
+	public static void main(String[] args) {
+	int m,n;
+	System.out.println("enter numbers m and n : ");
+	Scanner sc=new Scanner(System.in);
+	m=sc.nextInt();
+	n=sc.nextInt();
+	
+	m=m+n;
+	n=m-n;
+	m=m-n;
+	System.out.println("Swap numbers:"+m+"\t"+n);
+	
+	}
+
+}
+
+import java.util.Scanner;
+
+public class UseDiv {
+
+	public static void main(String[] args) {
+	int m,n;
+	System.out.println("enter numbers m and n : ");
+	Scanner sc=new Scanner(System.in);
+	m=sc.nextInt();
+	n=sc.nextInt();
+	
+	m=m*n;
+	n=m/n;
+	m=m/n;
+	System.out.println("Swap numbers:"+m+"\t"+n);
+	
+	}
+
+}
+
+
+import java.util.Scanner;
+
+public class UseXor {
+
+	public static void main(String[] args) {
+	int m,n;
+	System.out.println("enter numbers m and n : ");
+	Scanner sc=new Scanner(System.in);
+	m=sc.nextInt();
+	n=sc.nextInt();
+	
+	m=m^n;
+	n=m^n;
+	m=m^n;
+	System.out.println("Swap numbers:"+m+"\t"+n);
+	
+	}
+
+}
+
+Q.2 accept number from user and which are divisible by 3,7 and both print that number
+import java.util.Scanner;
+
+public class IfQ2 {
+
+	public static void main(String[] args) {
+		int a;
+		System.out.println("enter number (a):");
+		Scanner sc=new Scanner(System.in);
+		a=sc.nextInt();
+		if(a%3==0 && a%7==0)
+		{
+			System.out.println("three seven");
+		}
+		else if(a%3==0)
+		{
+			System.out.println("three");
+		}
+		else if (a%7==0)
+		{
+			System.out.println("seven");
+		}
+	}
+
+}
+
+LOOP
+Q.1 acept 10 numbers from user and calculate its sum
+import java.util.Scanner;
+
+public class LoopQ1 {
+public static void main(String[] args) {
+	int n,s=0;
+	System.out.println("enter the numbers of n :");
+	Scanner sc=new Scanner(System.in);
+	n=sc.nextInt();
+	for(int i = 0;i<10;i++)
+	{
+		n=sc.nextInt();
+		s+=n;			
+	}
+	System.out.println("Sum of numbers is: " + s );
+}
+}
+
+Q.2 accept 10 numbers from user and count which are positive,negative and zero.
+import java.util.Scanner;
+
+public class LoopQ2 {
+
+	public static void main(String[] args) {
+		int pos = 0,neg=0,zero=0;
+		System.out.println("Enter the numbers: ");
+		Scanner sc=new Scanner(System.in);
+		
+		for(int i=0;i<10;i++)
+		{int no=sc.nextInt();
+		if(no>0)
+		{
+			pos++;
+		}
+		else if (no<0)
+		{
+			neg++;
+		}
+		 else
+		{
+			zero++;
+		}		
+	}	 
+		System.out.println("positive no " + pos +"\t "+"negative no: "+ neg +"\t"+ "zero " + zero);
+}
+}
+
+
